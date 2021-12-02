@@ -1,0 +1,23 @@
+<!--  Uses Base Template From Base.html  -->
+{% extends 'base.html' %}
+
+<!--  Head Template Used  -->
+{% block head %} 
+<title>Welcome</title>
+{% endblock %}
+<!--  Body Template Used -->
+{% block body %} 
+<!--  Form autofocus gives blinking | 
+      action send the message to greet html
+      placeholder Shows default Name -->
+<form action="/greet" method="post">    <!--  Sends to /greet the post -->
+    <input autocomplete = "off" autofocus name="username" placeholder="admin" type="text">
+    <input autocomplete = "off" autofocus name="password" placeholder="password321" type="text">
+    <select name = "location">      <!--  location is main key word to retrieve any Province -->
+        <option disabled selected value="">Location</option> <!--  Disables the default top choice -->
+        {% for location in loc %} <!-- for loop to retrieve location from the array in python called loc -->
+            <option value = "{{ location }}">{{ location }}</option>
+        {% endfor %}
+    <input type="submit">
+</form>
+{% endblock %}

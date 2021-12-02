@@ -1,0 +1,12 @@
+<!--  Uses Base Template From Base.html  -->
+{% extends 'base.html' %}
+
+<!--  Head Template Used  -->
+{% block head %} 
+<title>Welcome</title>
+{% endblock %}
+<!--  Body Template Used -->
+{% block body %} 
+<p> Hello {{User}}</p> <!--  Here we pass into the template the name from the url /?name = whatever -->
+<p> For {{Location_ret}} </p> <!-- pass in the variable from the api return -->
+{% endblock %}
