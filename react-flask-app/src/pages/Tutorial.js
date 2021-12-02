@@ -1,4 +1,18 @@
-function Tutorial() {
-    return <div> Tutorial Page</div>;
+import Nav from '../components/Nav'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+
+function TutorialPage () {
+  return(
+    <div className="Tutorial">
+      <Nav />
+      <Header text="Tutorial"/>
+      <main>
+
+      </main>
+      <Footer/>
+    </div>
+  )
 }
-export default Tutorial;
+
+export default TutorialPage;

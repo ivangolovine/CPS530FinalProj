@@ -150,6 +150,7 @@ footer .ryerson_footer {
     height: 72px;
 }
 
+
 footer p{
     font-size: 22px;
     font-weight: 700;
@@ -160,6 +161,7 @@ footer ul{
     padding-left: 0;
     list-style-type: none;
 }
+
 
 
 footer .col:nth-child(2) ul li {
@@ -187,16 +189,8 @@ footer a:hover{
     opacity: 0.5;
     cursor: pointer;
 }
-
-
 /* tester */
-  body {
-    font-family: sans-serif;
-    margin: 3rem;
-    background-color: #dfdfdf;
-  }
-  
-  h1, h2 {
+h1, h2 {
     color: #333333;
   }
 .btn {

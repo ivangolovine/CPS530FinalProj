@@ -7,7 +7,7 @@ function Footer(){
         <p>Explore</p>
         <ul>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/FlaskPage'>Flask</Link></li>
+        <li><Link to='/Installation'>Flask</Link></li>
         <li><Link to='/Tutorial'>Tutorial</Link></li>
         <li><Link to='/Example'>Example</Link></li>
         <li><Link to='/Rating'>Rating</Link></li>

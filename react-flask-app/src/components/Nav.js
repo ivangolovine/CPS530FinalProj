@@ -6,7 +6,7 @@ function Nav() {
       <a href="https://www.cs.ryerson.ca/~cps530/" target="_blank"><img src="images/ryerson_icon_small.png"/></a>
       <ul>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/FlaskPage'>Flask</Link></li>
+        <li><Link to='/Installation'>Installation</Link></li>
         <li><Link to='/Tutorial'>Tutorial</Link></li>
         <li><Link to='/Example'>Example</Link></li>
         <li><Link to='/Rating'>Rating</Link></li>

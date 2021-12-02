@@ -5,9 +5,9 @@ import Clicklogr from '../components/Clicklogr'
 
 function Example() {
     return(
-        <div className="App">
+        <div className="Example">
             <Nav />
-            <Header text="Flask"/>
+            <Header text="Example"/>
             <Clicklogr />
             <Footer />
          </div>

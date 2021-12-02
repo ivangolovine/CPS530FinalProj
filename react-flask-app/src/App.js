@@ -1,7 +1,7 @@
 import Home from './pages/Home';
 import Credits from './pages/Credits'
 import Example from './pages/Example'
-import FlaskPage from './pages/FlaskPage'
+import Installation from './pages/Installation'
 import Rating from './pages/Rating'
 import Tutorial from './pages/Tutorial'
 import {
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Credits" element={<Credits />} />
         <Route path="/Example" element={<Example />} />
-        <Route path="/FlaskPage" element={<FlaskPage />} />
+        <Route path="/Installation" element={<Installation />} />
         <Route path="/Rating" element={<Rating />} />
         <Route path="/Tutorial" element={<Tutorial />} />
       </Routes>
