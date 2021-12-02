@@ -1,23 +1,22 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function Nav() {
   return(
     <nav>
-      <a href="https://www.cs.ryerson.ca/~cps530/" target="_blank"><img src="images/ryerson_icon_small.png"/></a>
+      <a href="https://www.cs.ryerson.ca/~cps530/" target="_blank"><img src="https://i.imgur.com/FZh2skv.png"/></a>
       <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/Installation'>Installation</Link></li>
-        <li><Link to='/Tutorial'>Tutorial</Link></li>
-        <li><Link to='/Example'>Example</Link></li>
-        <li><Link to='/Rating'>Rating</Link></li>
-        <li><Link to='/Credits'>Credits</Link></li>
+        <Link to="/"><li>Home</li></Link>
+        <Link to="/Installation"><li>Installation</li></Link>
+        <Link to="/tutorial"><li>Tutorial</li></Link>
+        <Link to="/example"><li>Example</li></Link>
+        <Link to="/ratings"><li>Rating</li></Link>
+        <Link to="/credits"><li>Credits</li></Link>
       </ul>
     </nav>
   );
 }
 
 export default Nav;
-
 
 /*
 function Nav() {
