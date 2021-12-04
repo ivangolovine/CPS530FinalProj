@@ -16,8 +16,9 @@ def submit():
 		return {"msg": "wrong username, The right username is admin"}
 	elif request_data['pass'] != 'password123':
 		return {"msg" : "wrong password, the right password is password123"}
-	else:
-		return {"msg": "https://image.shutterstock.com/image-vector/welcome-poster-spectrum-brush-strokes-260nw-1146069941.jpg"}
+	else: #testing "tmpClode": "true"
+		return {"msg": "https://image.shutterstock.com/image-vector/welcome-poster-spectrum-brush-strokes-260nw-1146069941.jpg"
+		}
 
 @app.route('/api/time')
 def get_current_time():

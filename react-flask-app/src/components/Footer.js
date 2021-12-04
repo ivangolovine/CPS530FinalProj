@@ -10,7 +10,7 @@ function Footer(){
         <li><Link to='/Installation'>Flask</Link></li>
         <li><Link to='/Tutorial'>Tutorial</Link></li>
         <li><Link to='/Example'>Example</Link></li>
-        <li><Link to='/Rating'>Rating</Link></li>
+        <li><Link to='/Ratings'>Rating</Link></li>
         <li><Link to='/Credits'>Credits</Link></li>
       </ul>
       </div>

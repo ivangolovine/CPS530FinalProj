@@ -162,8 +162,6 @@ footer ul{
     list-style-type: none;
 }
 
-
-
 footer .col:nth-child(2) ul li {
     display: inline;
 }
@@ -241,15 +239,32 @@ footer a:hover{
     top: 0;
     left: 0;
   }
-
+/*
   .card {
     background-color: white;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     width: 20rem;
+  }*/
+  .card {
+    background-color: white;
+    border-radius: 4px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 6rem;
+    top:300px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
-
   .new-line {
     white-space: pre-line;
   }
