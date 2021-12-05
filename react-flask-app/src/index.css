@@ -253,14 +253,13 @@ footer a:hover{
   .card {
     background-color: white;
     border-radius: 4px;
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     width: 6rem;
-    top:300px;
+    top: 300px;
     left: 0;
     right: 0;
     margin: auto;
@@ -271,6 +270,21 @@ footer a:hover{
 
 
  /*
+ .card {
+    background-color: white;
+    border-radius: 4px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 6rem;
+    top:300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 .Login {
     text-align: center;
   }

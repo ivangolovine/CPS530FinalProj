@@ -15,8 +15,6 @@ export const Form = ( {uChange, passChange, submitForm, submitUN, submitPass}) =
         passChange(event.target.value);
     }
 
-    
-
     return (
     <div>
         <form onSubmit={onSubmit} method="POST">
