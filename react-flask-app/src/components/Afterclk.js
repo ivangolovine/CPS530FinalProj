@@ -7,6 +7,7 @@ function Afterclk(props) {
     const [submitUN, setUN] = useState('');
     const [message, setMessage] = useState('');
     const [url, setUrl] = useState('');
+    const [gifURL, setGifURL] = useState('');
     //used to to know if it should close the signIn
     const [getSubmitted, setSubmitted] = useState(false);
 
@@ -22,18 +23,23 @@ function Afterclk(props) {
   const handleResponse = (message) => {
     var tempMessage = '';
     var tempURL = '';
+    var tempGif = '';
 
     if (message.msg.charAt(0) == 'h') {
       tempURL = message.msg;
+      tempGif = message.anim;
     } else {
       tempMessage = message.msg;
     }
     //testing
     setMessage(tempMessage);
     setUrl(tempURL);
+    setGifURL(tempGif);
+
     //sends the props message
     props.changeMessage(tempMessage);
     props.changeURL(tempURL);
+    props.changeGifURL(tempGif);
     props.onCancel();
     props.onClickShowImg();
   }

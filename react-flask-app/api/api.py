@@ -1,15 +1,16 @@
 import time
 import os
 from flask import Flask, render_template, redirect, url_for, request, json
+from flask.globals import session
 from flask.wrappers import Request
 
 app = Flask(__name__)
 
-@app.route('/api', methods=['GET'])
-def index():
-	return {"username" : "admin", "password" : "password123" }
+#@app.route('/api', methods=['GET'])
+#def index():
+#	return {"username" : "admin", "password" : "password123" }
 
-@app.route('/api/submit', methods=['POST'])
+@app.route('/api/submit', methods=['GET','POST'])
 def submit():
 	request_data = json.loads(request.data)
 	if request_data['un'] != 'admin':
@@ -17,8 +18,13 @@ def submit():
 	elif request_data['pass'] != 'password123':
 		return {"msg" : "wrong password, the right password is password123"}
 	else: #testing "tmpClode": "true"
-		return {"msg": "https://image.shutterstock.com/image-vector/welcome-poster-spectrum-brush-strokes-260nw-1146069941.jpg"
+		return { "anim": "https://media.giphy.com/media/Id6dC0GQOOzPMXgcPv/giphy.gif",
+			"msg": "https://image.shutterstock.com/image-vector/welcome-poster-spectrum-brush-strokes-260nw-1146069941.jpg"
 		}
+#logout
+#@app.route('/api/logout')
+#def logout():
+
 
 @app.route('/api/time')
 def get_current_time():

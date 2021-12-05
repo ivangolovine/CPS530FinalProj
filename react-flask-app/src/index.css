@@ -314,3 +314,10 @@ footer .col:first-child li:hover{
   background-color: var(--color-black-light);
   height: 20vh;
  }
+
+ .parentDiv {  
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-color: var(--color-gray-light);
+} 

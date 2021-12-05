@@ -6,6 +6,7 @@ function Clicklogr(props) {
     
     const [ getMessage, changeMessage ] = useState('cheers loves');
     const [ getURL, changeURL ] = useState('');
+    const [ getGifURL, changeGifURL] = useState('');
 
     //hide or show the img/msg
     const [ getImgSign, changImgSign] = useState(false);
@@ -28,8 +29,13 @@ function Clicklogr(props) {
 
     const Results = () => (
         <div>
-        <p>{getMessage} </p>
-        <img src={getURL}/>
+        <div className="parentDiv">
+            <p>{getMessage} </p>
+            <img src={getGifURL}/>
+        </div>
+        <div className="parentDiv">
+            <img src={getURL}/>
+        </div>
         </div>
       )
     
@@ -42,7 +48,7 @@ function Clicklogr(props) {
             <button className='btn' onClick={showHandler}>Login</button>
         </div>
         <div>
-            { getStateSign && <Afterclk onCancel={hideHandler} onConfirm={hideHandler} changeURL={changeURL} changeMessage={changeMessage} onClickShowImg={showImgHangler}/> }
+            { getStateSign && <Afterclk onCancel={hideHandler} onConfirm={hideHandler} changeURL={changeURL} changeMessage={changeMessage} changeGifURL={changeGifURL} onClickShowImg={showImgHangler}/> }
             { getStateSign && <Backdrop onCancel={hideHandler}/> }
         </div>
     </div>
