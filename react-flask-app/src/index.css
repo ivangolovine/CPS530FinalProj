@@ -1,3 +1,5 @@
+
+   
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500;700;900&display=swap');
 
 :root {
@@ -49,6 +51,10 @@
     font-family: 'Urbanist', sans-serif;
 }
 
+body{
+    background-color: var(--color-white-light);
+}
+
 header{
     text-align: center;
     line-height: 300px;
@@ -62,6 +68,7 @@ header{
 var(--color-blue-dark) 100%) */;
     margin: 75px 0 0 0;
 }
+
 
 nav{
     position: fixed;
@@ -103,10 +110,15 @@ nav>ul li:hover{
     cursor: pointer;
 }
 
+nav img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 main {
     max-width: 896px;
     margin: 32px auto;
-    
+    padding: 0 15px;
 }
 
 main p{
@@ -115,10 +127,47 @@ main p{
     color: var(--color-black-dark);
 }
 
+main ol, main ul{
+    margin-left: 15px;
+    margin-bottom: 12px;
+}
+
+main>ol>ul {
+    margin-bottom: 0px;
+}
+
+main ol { counter-reset: item; }
+main ol li { display: block; }
+main ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: var(light --color-black-light);
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+main li{
+    line-height: 24px;
+    color: var(--color-black-dark);
+}
+
 main h1 {
     margin-top: 36px;
     margin-bottom: 24px;
     color: var(--color-black-light);
+}
+
+main h2 {
+    margin-top: 36px;
+    margin-bottom: 24px;
+    color: var(--color-black-light);
+}
+
+main img {
+    margin: 10px 0px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 11px;
 }
 
 main code{
@@ -136,7 +185,8 @@ footer{
     padding: 30px 0; 
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--color-black-dark); 
+    background-color: var(--color-black-dark);
+    box-shadow: 0 50vh 0 50vh var(--color-black-dark);
 }
 
 footer .col{
@@ -162,6 +212,8 @@ footer ul{
     list-style-type: none;
 }
 
+
+
 footer .col:nth-child(2) ul li {
     display: inline;
 }
@@ -173,7 +225,7 @@ footer ul img{
     vertical-align: middle;
 }
 
-footer ul img:hover{
+footer .col img:hover{
     opacity: 0.5;
 }
 
@@ -183,7 +235,7 @@ footer a{
     
 }
 
-footer a:hover{
+footer .col:first-child li:hover{
     opacity: 0.5;
     cursor: pointer;
 }
@@ -239,27 +291,17 @@ footer a:hover{
     top: 0;
     left: 0;
   }
-/*
+
   .card {
     background-color: white;
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    width: 20rem;
-  }*/
-  .card {
-    background-color: white;
-    border-radius: 4px;
-    position: absolute;
+    position: static;
     display: flex;
     justify-content: center;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     width: 6rem;
-    top: 300px;
+    top: 320px;
     left: 0;
     right: 0;
     margin: auto;
@@ -268,59 +310,7 @@ footer a:hover{
     white-space: pre-line;
   }
 
-
- /*
- .card {
-    background-color: white;
-    border-radius: 4px;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    width: 6rem;
-    top:300px;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-.Login {
-    text-align: center;
-  }
-  
-  .Login-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .Login-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .Login-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .Login-link {
-    color: #61dafb;
-  }
-  
-  @keyframes Pass-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-*/
+ #changeBoxBack {
+  background-color: var(--color-black-light);
+  height: 20vh;
+ }

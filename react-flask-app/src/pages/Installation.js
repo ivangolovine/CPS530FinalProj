@@ -13,9 +13,7 @@ function InstallationPage () {
       <ol>
         <li>Open the terminal.</li>
         <li>Run the command: sudo apt-get install node.js/</li>
-        <ul>
-          <li>When the terminal asks “Do you want to continue [Y/n]?”, enter Y.</li>
-        </ul>
+        <p style={{marginLeft:"45px", marginBottom:"0"}}>○ When the terminal asks “Do you want to continue [Y/n]?”, enter Y.</p>
         <li>Wait for the computer to finish installing node.js</li>
         <li>cd to a directory where you wish to create the project</li>
         <li>Run the command: npx creat-react-app nameofapp</li>

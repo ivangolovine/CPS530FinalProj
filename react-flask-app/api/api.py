@@ -5,10 +5,6 @@ from flask.wrappers import Request
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return app.send_static_file('index.html')
-
 @app.route('/api', methods=['GET'])
 def index():
 	return {"username" : "admin", "password" : "password123" }

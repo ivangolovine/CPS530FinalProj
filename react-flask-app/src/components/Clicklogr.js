@@ -35,6 +35,7 @@ function Clicklogr(props) {
     
     return (
     <>
+    <div id="changeBoxBack">
     <div className='card'>
         <h2>{props.text}</h2> 
         <div className='clicklogr'>
@@ -44,6 +45,7 @@ function Clicklogr(props) {
             { getStateSign && <Afterclk onCancel={hideHandler} onConfirm={hideHandler} changeURL={changeURL} changeMessage={changeMessage} onClickShowImg={showImgHangler}/> }
             { getStateSign && <Backdrop onCancel={hideHandler}/> }
         </div>
+    </div>
     </div>
     { getImgSign ? <Results/> : null }
     </>
