@@ -15,7 +15,7 @@ function TutorialPage () {
           <li>Copy the following lines of code into your file</li>
           <img src = "https://i.imgur.com/efoqhau.png"/>
           <p>The first line above imports the Flask libraries. We then have access to the app.route decorator that takes in a string parameter representing a directory and allows us to link our function to that directory. Every time, a post or get request is made to that directory, our function will run its code. Finally, we run the app if the current file is the python file that is being run.</p>
-          <li>Import the json and request libraries from flask. These will help us receive POST requests and read the json data within them.</li>
+          <li>Import the json and request libraries from Flask. These will help us receive POST requests and read the json data within them.</li>
           <img src="https://i.imgur.com/tr4Jwc9.png"/>
           <li>Alter your main function by adding the following line before the return:</li>
           <img src="https://i.imgur.com/mRiZ6CE.png"/>

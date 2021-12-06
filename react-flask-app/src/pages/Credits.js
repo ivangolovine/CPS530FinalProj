@@ -16,6 +16,24 @@ function CreditsPage () {
       <p>“State of JS 2020.” Front-End Frameworks, 2020.stateofjs.com/en-US/technologies/front-end-frameworks/.</p>
       <p>Vinugayathri. “Top 10 Websites Built on React.js.” Top Remote Indian Talent for US Businesses, Clarion Blog, 24 Aug. 2021, www.clariontech.com/blog/top-10-websites-built-on-react.js?hs_amp=true#.</p>
       <p>Why Developers like Flask.” StackShare, stackshare.io/flask#:~:text=Who uses Flask?&text=1022 companies reportedly use Flask,Netflix, reddit, and Lyft.</p>
+      <h1>Contributers</h1>
+      <div className="containor">
+        <div className="cont-col">
+          <p>Mahad Farah</p>
+          <p>500783718</p>
+          <p>Front End (Header, Sidebar, Nav, Footer, CSS, Icons) Components, Page 1 & 3</p>
+        </div>
+        <div className="cont-col">
+          <p>Ivan Golovine</p>
+          <p>500813431</p>
+          <p>Backend, Hosting, Deployement, Components, Routing (Page 4)</p>
+        </div>
+        <div className="cont-col">
+          <p>Valareza Arezehgar</p>
+          <p>501020437</p>
+          <p>Backend, WriteUp, Front-end (Page 3, 4, 5, 6)</p>
+        </div>
+      </div>
       </main>
       <Footer/>
     </div>

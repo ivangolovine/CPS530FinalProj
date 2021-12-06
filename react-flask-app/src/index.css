@@ -1,5 +1,3 @@
-
-   
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500;700;900&display=swap');
 
 :root {
@@ -187,6 +185,16 @@ footer{
     justify-content: space-evenly;
     background-color: var(--color-black-dark);
     box-shadow: 0 50vh 0 50vh var(--color-black-dark);
+}
+
+.containor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.cont-col{
+    text-align: center;
+    margin: 0 25px;
 }
 
 footer .col{
